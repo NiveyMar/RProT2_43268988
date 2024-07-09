@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="miestilo.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,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"
+                    width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Registro</div>
+                    <div class="card-body">
+                        <form id="registroForm">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Ingrese su contraseña" minlength="6" maxlength="8">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Repita su contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Transformar nombre a mayúsculas
+            var nombreInput = document.getElementById('nombre');
+            nombreInput.value = nombreInput.value.toUpperCase();
+    
+            // Validar correo electrónico
+            var emailInput = document.getElementById('email');
+            var email = emailInput.value.trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Ingrese una dirección de correo electrónico válida.');
+                return;
+            }
+    
+            // Mostrar asteriscos en la contraseña y verificar longitud
+            var passwordInput = document.getElementById('password');
+            var passwordLength = passwordInput.value.length;
+            var maskedPassword = '*'.repeat(passwordLength);
+            passwordInput.value = maskedPassword;
+    
+            // Validar longitud de contraseña entre 6 y 8 caracteres
+            if (passwordLength < 6 || passwordLength > 8) {
+                alert('La contraseña debe tener entre 6 y 8 caracteres.');
+                return;
+            }
+    
+            // Confirmar contraseña
+            var confirmPasswordInput = document.getElementById('confirmPassword');
+            var password = passwordInput.value;
+            var confirmPassword = confirmPasswordInput.value;
+            if (password !== confirmPassword) {
+                alert('Las contraseñas no coinciden.');
+                return;
+            }
+    
+            // Si todas las validaciones son correctas, se podría enviar el formulario
+            alert('Registro exitoso!');
+    
+            // Aquí podrías enviar el formulario con AJAX o realizar alguna otra acción
+        });
+    </script>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Contacto:Copyrights 2023 Corrientes Telecomunicaciones SAPEM</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+
+</html>

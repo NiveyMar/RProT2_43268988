@@ -1,0 +1,163 @@
+img {
+    display: block;
+    /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
+    margin: 0 auto;
+    /* Centrar las imágenes horizontalmente */
+    max-width: 100%;
+    /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border: 2px solid #65e62e;
+    /* Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
+    border-radius: 10px;
+    /* Borde redondeado de 10px para suavizar el contorno */
+    height: auto;
+    object-fit: cover;
+}/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #47a53c;
+    /* Color de fondo de la barra de navegación */
+    border: 1px solid #100e0e;
+    /* Borde de la barra de navegación */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el logotipo (navbar-brand) */
+.navbar-brand {
+    font-weight: bold;
+    /* Texto en negrita */
+    color: #0b0b0b;
+    /* Color del texto */
+}
+
+.navbar-brand:hover {
+    color: #2fa929;
+    /* Color del texto al pasar el ratón */
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar-nav .nav-link {
+    color: #0a0909;
+    /* Color del texto de los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    /* Color del texto al pasar el ratón (azul) */
+}
+
+/* Estilos para el botón de búsqueda */
+.form-control {
+    width: 300px;
+    /* Ancho del campo de búsqueda */
+}
+
+.btn-outline-success {
+    color: #28a745;
+    /* Color del texto del botón */
+    border-color: #28a745;
+    /* Color del borde del botón */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    /* Color de fondo al pasar el ratón */
+    color: #fff;
+    /* Color del texto al pasar el ratón (blanco) */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    background-color: #0e0f0dfa;
+    /* Color de fondo del menú desplegable */
+    border: 1px solid #ccc;
+    /* Borde del menú desplegable */
+}
+
+.dropdown-item {
+    color: #edf4ec;
+    /* Color del texto de los ítems del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    /* Color de fondo al pasar el ratón */
+    color: #fff;
+    /* Color del texto al pasar el ratón (blanco) */
+}
+
+.dropdown-divider {
+    background-color: #ccc;
+    /* Color de la línea divisoria del menú desplegable */
+}
+
+header {
+    background-color: rgba(241, 245, 239, 0.984);
+    color: #f1f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    margin-top: 50px;
+    /* Margen superior */
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.carousel-item img {
+    border-radius: 5px;
+    /* Bordes redondeados para las imágenes */
+    object-fit: contain;
+    /* Ajustar la imagen para cubrir el contenedor */
+}
+
+/* Estilo para los controles de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Ancho de los botones de control */
+}
+
+/* Estilo para el ícono de flecha en los controles de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    /* Color de fondo del ícono */
+    width: 30px;
+    /* Tamaño del ícono */
+    height: 30px;
+    border-radius: 50%;
+    /* Bordes redondeados para el ícono */
+}
+
+/* Estilo para el ícono de flecha en los controles de navegación al pasar el ratón */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #555;
+    /* Cambio de color al pasar el ratón */
+}
+.card {
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center; /* Centra el texto */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra */
+}
+
+footer {
+    background-color: #46c81a;
+    /* Color de fondo del footer */
+    color: #0e0d0d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    /* Ancho máximo del contenido del footer */
+    margin: 0 auto;
+    /* Centrar el contenido del footer horizontalmente */
+    text-align: center;
+}
